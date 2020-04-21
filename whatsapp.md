@@ -1,7 +1,3 @@
----
-permalink: /whatsapp
----
-
 # Section 1c. WhatsApp
 
 ## Setting up your WhatsApp Business account

@@ -1,6 +1,3 @@
----
-permalink: /before-you-start
----
 
 # Section 1: Before You Start
 
