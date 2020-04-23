@@ -9,7 +9,7 @@ Postman lets government officials mass send messages to citizens through SMS and
 
 1. **Communication is manual**: Agency users are still calling or sending individual SMS to citizens. 
 2. **Existing tool is not meeting the needs of users**: Outlook does not support mass sending and it is often capped at 1000 emails. 
-3. **No official source of information**: Communications coome in many forms. Lacking a consistent channel puts agencies at risk of phishing attack.
+3. **No official source of information**: Communications come in many different forms. Lacking a consistent channel puts agencies at risk of phishing attack.
 
 ## When does Postman send my message? 
 
