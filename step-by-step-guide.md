@@ -24,3 +24,9 @@ Download the [csv template](https://drive.google.com/file/d/1kwYZQVOTrehUe9-iHMB
 
 * Make sure the headers are in **lowercase**
 * Make sure there is a field call **recipient**
+
+## Example: SMS flow
+![sms gif](./assets/postman-sms.gif)
+
+## Example: Email flow
+![email gif](./assets/postman-email.gif)
