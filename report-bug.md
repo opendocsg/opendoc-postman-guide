@@ -1,4 +1,4 @@
-# Section 5: Report Bugs 
+# Section 6: Report Bugs 
 
 ## Found a Bug?
 Please read through the following before you report a bug. 

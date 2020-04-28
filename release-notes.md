@@ -1,4 +1,4 @@
-# Section 4: Release Notes & Roundups
+# Section 5: Release Notes & Roundups
 
 We typically release features, improvements, or fixes every week.
 
