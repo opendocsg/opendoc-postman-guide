@@ -1,6 +1,3 @@
----
-permalink: /twilio-sms
----
 # Section 1a: Twilio & SMS
 
 ## What is Twilio?

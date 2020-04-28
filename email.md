@@ -1,7 +1,3 @@
----
-permalink: /email
----
-
 # Section 1b. Email
 
 ![home empty graphic](./assets/HomeEmpty.svg)
