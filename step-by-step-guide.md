@@ -17,10 +17,12 @@ Most of our users have an internal database that includes all of their contact.Y
 
 ![excel convert to csv](./assets/tip-excel-csv-convert.png)
 
-Download the [csv template](https://drive.google.com/file/d/1kwYZQVOTrehUe9-iHMBh2OHNrTQAHsD-/view?usp=sharing "Postman csv template") for reference. 
+Download the SMS campaign [csv template](https://drive.google.com/file/d/1kwYZQVOTrehUe9-iHMBh2OHNrTQAHsD-/view?usp=sharing "Postman csv template") for reference. 
 
-* Make sure the headers are in **lowercase**
-* Make sure there is a field call **recipient**
+* Make sure the headers are in **lowercase**.
+* Make sure there is a field call **recipient** that will contain the phone number or email address. 
+* Email should be formatted like **abc@gmail.com**.
+* Phone number should be formmated like **88888888** with no space, no dash, and no +65. 
 
 ## Example: SMS flow
 ![sms gif](./assets/postman-sms.gif)

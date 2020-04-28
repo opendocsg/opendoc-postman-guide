@@ -1,4 +1,4 @@
-# Section 3: FAQs
+# Section 4: FAQs
 
 ## Credentials
 ### Can I see what Postman has before entering a credential?
