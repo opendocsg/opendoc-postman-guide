@@ -1,4 +1,3 @@
-
 # Section 1: Before You Start
 
 ![common agency email](./assets/alert-postman-common-email.png)
