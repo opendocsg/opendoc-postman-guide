@@ -114,6 +114,12 @@ Singapore phone number is $75 per month. We recommend that you buy a US phone nu
 
 ![buy phone number](./assets/buy-num-2.jpg)
 
+### Alphanumeric Sender ID
+
+You can go to **Programmable SMS > Messaging Service > Select the name of the Messaging Service > Features > Alpha Sender ID** (see box in red) to enter in your alphanumeric sender ID.
+
+![alpha sender id](./assets/alphasenderid.jpg)
+
 ## 5. Manage Phone number
 Go to **Phone Numbers** to buy a new number and select a number. This will be the number that we will use to send your messages. 
 
