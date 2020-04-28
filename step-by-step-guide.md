@@ -1,6 +1,3 @@
----
-permalink: /step-by-step
----
 # Section 2: Step by Step Guide
 
 ## Step 1: Create a Message Template
