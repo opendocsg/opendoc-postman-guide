@@ -13,7 +13,7 @@ We leave it up to the communication team to govern the usage of Postman. If you 
 
 Think of credentials as a passcode that you need to enter into a keypad in order to get into a door. We need your credentials to contact Twilio & WhatsApp Business’ API. Different services would have different credential set-up. This guide will teach you how to get them and where to save them (see below).
 
-### Step 1: Go to accounts
+### Step 1: Go to account
 ![accounts landing page](./assets/accounts-landing.jpg)
 
 ### Step 2: Add in your Twilio credentials
