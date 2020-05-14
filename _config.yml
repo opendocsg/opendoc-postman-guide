@@ -8,7 +8,7 @@ baseurl: ''
 server_PROD: https://search.opendoc.sg
 server_DEV: https://search-staging.opendoc.sg
 offline: false
-google_analytics: #----> Optional
+google_analytics: UA-166611802-1 #----> Optional
 order: #----> Optional, order of documents
 
 styling_options:
