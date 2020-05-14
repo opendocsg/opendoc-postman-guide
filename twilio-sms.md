@@ -126,3 +126,4 @@ Go to **Phone Numbers** to buy a new number and select a number. This will be th
 ![active number](./assets/activenum.jpg)
 
 ![do not release number](./assets/alert-release-number.png)
+
