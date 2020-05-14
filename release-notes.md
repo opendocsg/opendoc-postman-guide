@@ -6,7 +6,7 @@ We typically release features, improvements, or fixes every week.
 1. **Official Launch:** postman.gov.sg is ready for all agency users to use.
 2. **Features:** Credentials can now be saved and reused for campaigns. Generate API keys for API use case. Campaign stats. Templates would now have an error if the recipient column is not found in the excel. sent at timestamp added to the campaign landing page. 
 3. **Fix:** Mobile responsive. Distribute send rate evenly on backend. 
-4. **Swagger:** [documentation here](https://api-staging.postman.gov.sg/docs/ "Postman Swagger File")  documentation for more information about [Postman's API]( https://api-staging.postman.gov.sg/docs/ "Postman Swagger File") 
+4. **Swagger:** see [documentation here](https://api-staging.postman.gov.sg/docs/ "Postman Swagger File") for more information about [Postman's API]( https://api-staging.postman.gov.sg/docs/ "Postman Swagger File"). API can can be generated under Postman **account** tab.  
 
 
 **Apr 27th, 2020**
