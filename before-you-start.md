@@ -33,6 +33,7 @@ An SMS will also be sent to your mobile number.
 You can go back to campaign to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in accounts. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It **will not be saved**. 
 
 ## Remove your credentials
+
 There is no preview for the credentials saved yet (work in progress). Remove your credential by clicking on the trash icon. 
 
 ![credential added](./assets/accounts-cred-added.jpg)
@@ -40,6 +41,10 @@ There is no preview for the credentials saved yet (work in progress). Remove you
 We will prompt you to make sure that it is the credential that you want to delete. Deletion is not reversible. 
 
 ![delete credential](./assets/accounts-delete-cred.jpg)
+
+## Request a set of trial credentials for SMS sending. 
+
+Please fill out the following [form](https://form.gov.sg/5ebcd3b652407a00116942ec "FormSG form") and we will reach out to you.  
 
 ## Generate an API key
 
@@ -52,6 +57,6 @@ Copy the API key and you can start using Postman's API to send SMS or email.
 
 ## Swagger
 
- Please visit our [swagger]( https://api-staging.postman.gov.sg/docs/ "Postman Swagger File")  documentation for more information about [Postman's API]( https://api-staging.postman.gov.sg/docs/ "Postman Swagger File") 
+ Please visit our [swagger](https://api-staging.postman.gov.sg/docs/ "Postman Swagger File")  documentation for more information about [Postman's API]( https://api-staging.postman.gov.sg/docs/ "Postman Swagger File") 
  
 ![swagger doc](./assets/swagger.jpg)
