@@ -11,7 +11,7 @@ We leave it up to the communication team to govern the usage of Postman. If you 
 
 ## Save your credentials
 
-Think of credentials as a passcode that you need to enter into a keypad in order to get into a door. We need your credentials to contact Twilio & WhatsApp Business’ API. Different services would have different credential set-up. This guide will teach you how to get them and where to save them (see below).
+Think of credentials as a passcode that you need to enter into a keypad in order to get into a door. We need your credentials to contact Twilio’s API. Different services would have different credential set-up. This guide will teach you how to get them and where to save them (see below).
 
 ### Step 1: Go to account
 ![accounts landing page](./assets/accounts-landing.jpg)
@@ -30,7 +30,7 @@ An SMS will also be sent to your mobile number.
 
 ![phone credential valid](./assets/phone-cred-valid.jpg)
 
-You can go back to campaign to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in accounts. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It **will not be saved**. 
+You can go back to **campaigns** to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in accounts. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It **will not be saved**. 
 
 ## Remove your credentials
 

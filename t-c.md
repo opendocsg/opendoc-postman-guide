@@ -1,5 +1,5 @@
 
-# Terms of Use
+# Terms of Use for Postman.gov.sg
 
 ### 1 . General
 
