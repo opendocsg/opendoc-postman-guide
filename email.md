@@ -7,3 +7,6 @@ Unlike SMS and WhatsApp, Postman will handle the email sending for you. You do n
 
 ## What email address will be in the from field if I were to send my messages out via Postman?
 The from field will be donotreply@mail.postman.gov.sg.
+
+## How can I format my email?
+Go to [Section 3: Power User](./poweruser "Section 3: Power User")

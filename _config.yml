@@ -1,4 +1,4 @@
-title: Postman
+title: Postman.gov.sg
 remote_theme: opendocsg/opendoc-theme@master
 timezone: Asia/Singapore
 repository: opendocsg/opendoc-postman-guide
@@ -24,7 +24,7 @@ hide_toolbar:
 
 folders:
   - name: '/'
-    title: 'A guide to all things Postman'
+    title: 'A guide to all things Postman.gov.sg'
     subtitle: ''
     order:
       - "before-you-start.md" 
