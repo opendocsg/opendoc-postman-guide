@@ -11,14 +11,6 @@ Postman lets government officials mass send messages to citizens through SMS and
 2. **Existing tool is not meeting the needs of users**: Outlook does not support mass sending and it is often capped at 1000 emails. 
 3. **No official source of information**: Communications come in many different forms. Lacking a consistent channel puts agencies at risk of phishing attack.
 
-## When does Postman send my message? 
-
-Postman currently supports **send NOW**. 
-
-## Where do messages go and how do I know that Postman delivered it successfully?
-
- Messages go to the recipients that you specified. Like Fedex, you can track your package. Postman tells you the number of failed deliveries and you can reattempt delivery. 
-
 ## Why should you use Postman?
 
 1. Reliable
@@ -27,7 +19,7 @@ Postman currently supports **send NOW**.
 
 ## Is Postman free?
 
-Sending an email is free. SMS & WhatsApp will be charged based on WhatsApp and Twilio SMS rates. 
+Sending an email is free. SMS & WhatsApp will be charged based on Twilio SMS rates. 
 
 ## Is Postman secure?
 

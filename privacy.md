@@ -47,7 +47,7 @@ This Privacy Policy must be read in conjunction with the Terms of Use that accom
 This version of the Privacy Policy is dated 21 May 2020.
 
 ## Annex
-Name of Service: Postman.gov.sg
+**Name of Service**: Postman.gov.sg
 Types of data collected/requested
 
 a. User email
