@@ -48,6 +48,7 @@ This version of the Privacy Policy is dated 21 May 2020.
 
 ## Annex
 **Name of Service**: Postman.gov.sg
+
 Types of data collected/requested
 
 a. User email
