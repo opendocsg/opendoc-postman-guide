@@ -53,6 +53,6 @@ Types of data collected/requested
 
 a. User email
 
-b. Message Template
+b. Message template
 
 This Annex was last updated on 21 May 2020.
