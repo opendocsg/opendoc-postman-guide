@@ -38,7 +38,7 @@ This Privacy Policy must be read in conjunction with the Terms of Use that accom
 
 6. The Service may contain links to external sites whose data protection and privacy practices may differ from ours. We are not responsible for the content and privacy practices of these other websites and encourage you to consult the privacy notices of those sites.
 
-7. Please contact postman@opeen.gov.sg if you:
+7. Please contact postman@open.gov.sg if you:
 
     7.1. have any enquiries or feedback on our data protection policies and procedures; or
 
