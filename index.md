@@ -19,7 +19,7 @@ Postman lets government officials mass send messages to citizens through SMS and
 
 ## Is Postman free?
 
-Sending an email is free. SMS & WhatsApp will be charged based on Twilio SMS rates. 
+Sending an email is free. SMS will be charged based on Twilio's SMS rates. 
 
 ## Is Postman secure?
 
