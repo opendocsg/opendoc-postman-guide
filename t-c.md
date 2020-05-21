@@ -65,7 +65,7 @@ Please see the Schedule for more information and terms concerning this Service.
 
 ### 5.  Your Consent to Access Functions of Your Device
 
-Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see clause Error! Reference source not found. (Privacy Policy). Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.
+Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see privacy policy. Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.
 
 5A. Ownership of Feedback/Requests/Suggestions
 
