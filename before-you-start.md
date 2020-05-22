@@ -2,7 +2,7 @@
 
 ![common agency email](./assets/alert-postman-common-email.png)
 ## Create a common email
-Your login will be the primary email address that we will use to send your emails out to the recipients. Postman does not manage users for an agency. Twilio and WhatsApp credentials will be tied to an agency email account. You might have to contact your IT administrator to create a common email account that allows multiple subscribers. The primary advantage of such set-up is that the past campaigns can be seen under one account for audit purpose. 
+Your login will be the primary email address that we will use to send your emails out to the recipients. Postman does not manage users for an agency. Twilio credentials will be tied to an agency email account. You might have to contact your IT administrator to create a common email account that allows multiple subscribers. The primary advantage of such set-up is that the past campaigns can be seen under one account for audit purpose. 
 
 ## Can I have multiple users from the same agency sharing the same account?
 Sharing is caring! All users from the same agency should share one account. The rationale behind our set-up is that communications out to the public should be vetted before you press send. Each agency has its own communication guidelines & policy. 
@@ -30,7 +30,7 @@ An SMS will also be sent to your mobile number.
 
 ![phone credential valid](./assets/phone-cred-valid.jpg)
 
-You can go back to **campaigns** to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in accounts. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It **will not be saved**. 
+You can go back to **campaigns** to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in account. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It **will not be saved**. 
 
 ## Remove your credentials
 

@@ -1,17 +1,21 @@
 # Section 4: FAQs
+## Access
+### I don't have an email address that ends with gov.sg. Can I use Postman?
+
+Yes, please fill out the following [form](https://go.gov.sg/postman-non-gov-sg-application "Form for non gov sg user") and we will get back to you. 
 
 ## Credentials
 ### Can I see what Postman has before entering a credential?
 
-If you are checking out Postman, you can go through most of the steps before we ask you to enter a credential. This is so that the civil servants can learn how to navigate the user interface first before initiating the necessary paperwork for procuring Twilio & WhatsApp Business. Without the credentials, we are not able to send the SMS or WhatsApp messages.
+Yes, please go to [section 2](/step-by-step-guide/ "Section 2: Step by step").
 
 ### How would I know that my credentials are working?
 
-Before you send an SMS or WhatsApp message to the citizens, we will ask you to put in your credentials and send a message to yourself to test the credentials. We recommend that you log onto Twilio or WhatsApp Business console so that you can copy and paste in the credentials when prompted. 
+Before you send an SMS or WhatsApp message to the citizens, we will ask you to put in your credentials and send a message to yourself to test the credentials. We recommend that you log onto Twilio so that you can copy and paste in the credentials when prompted. 
 
-### I don’t know how to find credentials in my Twilio or WhatsApp console!
+### I don’t know how to find my Twilio credentials!
 
-Not to worry! Go to [Before You Start](/before-you-start/#setting-up-your-twilio-account/ "Postman Guide Before You Start") for more info. 
+ Go to [Before You Start](/before-you-start/#setting-up-your-twilio-account/ "Section 1: Before You Start") for more info. 
 
 
 ## Features
@@ -23,21 +27,16 @@ Subscription is currently not in the scope of Postman. It will likely be part of
 
 We are not going to cover this feature in the first iteration of Postman. You can check when a SMS is sent by logging into your Twilio console and searching for the phone number. Your agency is the only one that can check through your Twilio account. We will not be able to access it. 
 
-## Misc.
-### We really want WhatsApp. Do you recommend it?
-
-WhatsApp is more expensive than SMS, especially if you don’t send enough messages regularly. If you do not track read receipts, SMS is the perfect alternative to notify citizens based on our user research. It is much easier to set up a Twilio account than a WhatsApp business account. 
-
-### Why don’t you support multiple users from a single agency?
-
-Messages sent to the public are usually governed by the comms teams within an agency. We recommend that you contact your comms team before setting up Postman so that the agency is clear on what is sent to the citizens. Postman is a productivity tool and we believe that the governance of the tool should fall under the agency themselves. 
-
 ## Billing
 ### I noticed that UK Notify supports invoicing. Is Postman going to do the same?
 
 Postman does not bill the user separately. We believe in transparency in the pricing of our service. OGP will bear the cost of Postman’s infra. We ask the agencies to pay for the SMS and WhatsApp message cost given that these are operational costs. 
 
-### How does Twilio & WhatsApp Business charge my agency?
+### How does Twilio charge my agency?
 
 Depending on your usage, Twilio has a few different plans. If you do pay-as-you-go, you only need a corporate credit card on file. It works like prepaid mobile plan. You top-up certain amounts of money every month and deplete the account as you send SMS. Post-paid mobile plans requires you to contact Twilio’s rep and initiate a procurement process that adheres to IM8 guidelines. Contact WhatsApp Business sales representatives to find out more about their business plans. Go to [Before You Start - Twilio & SMS](/twilio-sms/ "Postman Guide Before You Start") for more info. 
+
+### Is there a bulk tender for Twilio?
+
+There is no bulk tender for Twilio at the moment. You can email ```postman@open.gov.sg``` to indicate your interest. We are collating the number of agencies that are interested in bulk tender. 
 

@@ -117,7 +117,7 @@ Singapore phone number is $75 per month. We recommend that you buy a US phone nu
 
 ![do not release number](./assets/alert-release-number.png)
 
-Once you have bought a number, you can go back to Messaging Service to complete the set up by linking a phone number to your messaging service. 
+Once you have bought a number, you can go back to **Messaging Service** to complete the set up by linking a phone number to your messaging service. 
 
 ## 5. Alphanumeric Sender ID
 
