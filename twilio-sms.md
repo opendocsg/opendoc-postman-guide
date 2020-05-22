@@ -21,8 +21,8 @@ Twilio, Nextmo and AWS SNS are all cloud base SMS solutions. Twilio’s primary 
 
 **Reliability & availability**
 
-Twilio API success rate is 99.999% & uptime is ~ 99.95% (per month)
-Nexmo does not publicly declare its API success rate and uptime
+Twilio API success rate is 99.999% & uptime is ~ 99.95% (per month).
+Nexmo does not publicly declare its API success rate and uptime.
 AWS does not publicly declare its API success rate but uptime is ~99.90% (per month).
 
 ## How can I sign-up for a Twilio account?
@@ -103,11 +103,11 @@ You can use a US number and mask the number with an [alphanumeric sender ID](htt
 
 ![phone number](./assets/phonenum.jpg)
 
-If you wish to purchase a singapore phone that starts with +65, you need to complete a regulatory bundle. It will ask for an ID and business details for verification. 
+If you wish to purchase a Singapore phone number that starts with +65, you need to complete a regulatory bundle. It will ask for an ID and business details for verification. 
 
 ![complete regulatory bundle](./assets/reg-bundle.jpg)
 
-Once your application for regulatory bundle has been approved then you can search for a phone number that starts wtih +65. 
+Once your application for regulatory bundle has been approved then you can search for a phone number that starts with +65. 
 
 ![search phone number](./assets/buy-num-1.jpg)
 
