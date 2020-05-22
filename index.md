@@ -23,6 +23,6 @@ Sending an email is free. SMS will be charged based on Twilio's SMS rates.
 
 ## Is Postman secure?
 
-SMS is not 100% secure. We recommend that you don't put any sensitive information in the sms content. Some of our users generate a recipient specific unique link that opens up to a locked page. When in doubt, you should follow IM8's guidelines on data classification. 
+Email and SMS is not 100% secure. We recommend that you don't put any sensitive information in the email or sms content. Some of our users generate a recipient specific unique link that opens up to a locked page. When in doubt, you should follow IM8's guidelines on data classification. Postman recommends messages that are open and meant for the citizens. 
 
 

@@ -95,18 +95,19 @@ Go back to **SMS > Messaging Service**. You will see the newly created messaging
 
 
 ## 4. Buy a number
-You can use a US number and mask the number with an [alphanumeric sender ID](https://support.twilio.com/hc/en-us/articles/223181348-Getting-Started-with-Alphanumeric-Sender-ID-for-Twilio-Programmable-SMS/
- "Twilio alphanumeric sender ID"). Singapore number is only needed for 2-way SMS. Postman will support 1-way SMS at the start. 
 
 You need to purchase a phone number to start using Postman. 
 
+You can use a US number and mask the number with an [alphanumeric sender ID](https://support.twilio.com/hc/en-us/articles/223181348-Getting-Started-with-Alphanumeric-Sender-ID-for-Twilio-Programmable-SMS/
+ "Twilio alphanumeric sender ID"). Singapore number is only needed for 2-way SMS. Postman will support 1-way SMS at the start. 
+
 ![phone number](./assets/phonenum.jpg)
 
-You need to complete a regulatory bundle first before you can buy a number. It will ask for an ID and business details for verification. 
+If you wish to purchase a singapore phone that starts with +65, you need to complete a regulatory bundle. It will ask for an ID and business details for verification. 
 
 ![complete regulatory bundle](./assets/reg-bundle.jpg)
 
-Once your application for regulatory bundle has been approved then you can search for a phone number based on the country code. 
+Once your application for regulatory bundle has been approved then you can search for a phone number that starts wtih +65. 
 
 ![search phone number](./assets/buy-num-1.jpg)
 
@@ -114,16 +115,13 @@ Singapore phone number is $75 per month. We recommend that you buy a US phone nu
 
 ![buy phone number](./assets/buy-num-2.jpg)
 
-### Alphanumeric Sender ID
+![do not release number](./assets/alert-release-number.png)
+
+Once you have bought a number, you can go back to Messaging Service to complete the set up by linking a phone number to your messaging service. 
+
+## 5. Alphanumeric Sender ID
 
 You can go to **Programmable SMS > Messaging Service > Select the name of the Messaging Service > Features > Alpha Sender ID** (see box in red) to enter in your alphanumeric sender ID.
 
 ![alpha sender id](./assets/alphasenderid.jpg)
-
-## 5. Manage Phone number
-Go to **Phone Numbers** to buy a new number and select a number. This will be the number that we will use to send your messages. 
-
-![active number](./assets/activenum.jpg)
-
-![do not release number](./assets/alert-release-number.png)
 
