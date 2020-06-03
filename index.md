@@ -27,7 +27,7 @@ Email and SMS is not 100% secure. We recommend that you don't put any sensitive 
 
 ## Can I access Postman in the government intranet?
 
-Postman is only available on the internet at the moment. We will announce it under [release ntoes and round ups](./release-notes "Section 5: Release Notes & Roundups") when Postman can be accessed through the government intranet. 
+Postman is only available on the internet at the moment. We will announce it under [release notes and round ups](./release-notes "Section 5: Release Notes & Roundups") when Postman can be accessed through the government intranet. 
 
 ## Data classification
 
