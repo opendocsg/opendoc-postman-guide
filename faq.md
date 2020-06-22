@@ -4,6 +4,10 @@
 
 Yes, please fill out the following [form](https://go.gov.sg/postman-non-gov-sg-application "Form for non gov sg user") and we will get back to you. 
 
+## Browser Compatibility
+
+We only support Chrome, Firefox, and Samsung Internet at the moment. We have had issues with Postman on Internet Explorer 11 and we are actively fixing this issue. 
+
 ## Credentials
 ### Can I see what Postman has before entering a credential?
 
