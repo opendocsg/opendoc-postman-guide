@@ -30,12 +30,12 @@ folders:
       - "before-you-start.md" 
       - "twilio-sms.md"
       - "email.md"
-      - "whatsapp.md"
+      - "telegram.md"
       - "step-by-step-guide.md"
       - "poweruser.md"
       - "faq.md"
-      - "release-notes.md"
       - "report-bug.md"
+      - "privacy.md"
       - "t-c.md"
 
 
