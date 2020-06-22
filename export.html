@@ -1,0 +1,739 @@
+<!-- layout for print export.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+  </head>
+
+  <body class="print-content">
+    <section class="description">
+      <img class="description-logo" src="./assets/logo.svg">
+      <div class="description-title">Postman.gov.sg</div>
+    </section>
+
+    <div class="site-main" aria-label="Content" >
+      
+<h1 id="section-1-before-you-start">Section 1: Before You Start</h1>
+
+<p><img src="/opendoc-postman-guide/assets/alert-postman-common-email.png" alt="common agency email" /></p>
+<h2 id="create-a-common-email">Create a common email</h2>
+<p>Your login will be the primary email address that we will use to send your emails out to the recipients. Postman does not manage users for an agency. Twilio credentials will be tied to an agency email account. You might have to contact your IT administrator to create a common email account that allows multiple subscribers. The primary advantage of such set-up is that the past campaigns can be seen under one account for audit purpose.</p>
+
+<h2 id="can-i-have-multiple-users-from-the-same-agency-sharing-the-same-account">Can I have multiple users from the same agency sharing the same account?</h2>
+<p>Sharing is caring! All users from the same agency should share one account. The rationale behind our set-up is that communications out to the public should be vetted before you press send. Each agency has its own communication guidelines &amp; policy.</p>
+
+<p>We leave it up to the communication team to govern the usage of Postman. If you are sending a message broadcast to the entire country, please make sure you get your use case vetted by the <a href="https://www.mci.gov.sg/" title="Ministry of Communications and Information">Ministry of Communications and Information</a>.</p>
+
+<h2 id="save-your-credentials">Save your credentials</h2>
+
+<p>Think of credentials as a passcode that you need to enter into a keypad in order to get into a door. We need your credentials to contact Twilio’s API. Different services would have different credential set-up. This guide will teach you how to get them and where to save them (see below).</p>
+
+<h3 id="step-1-go-to-account">Step 1: Go to account</h3>
+<p><img src="/opendoc-postman-guide/assets/accounts-landing.jpg" alt="accounts landing page" /></p>
+
+<h3 id="step-2-add-in-your-twilio-credentials">Step 2: Add in your Twilio credentials</h3>
+<p><img src="/opendoc-postman-guide/assets/accounts-enter-cred.jpg" alt="add credential" /></p>
+
+<h3 id="step-3-put-in-your-mobile-number-to-validate-your-credential">Step 3: Put in your mobile number to validate your credential</h3>
+<p><img src="/opendoc-postman-guide/assets/accounts-test-cred.jpg" alt="test credential" /></p>
+
+<p>Receive a succes message once your credential has been validated.</p>
+
+<p><img src="/opendoc-postman-guide/assets/accounts-cred-valid.jpg" alt="credential valid" /></p>
+
+<p>An SMS will also be sent to your mobile number.</p>
+
+<p><img src="/opendoc-postman-guide/assets/phone-cred-valid.jpg" alt="phone credential valid" /></p>
+
+<p>You can go back to <strong>campaigns</strong> to start sending your SMS. The testing message page will have a dropwdown menu for you to select the credentials that you have saved in account. You can also choose to enter in a new set of credentials under campaign. The credentials entered for the campaign is only specific to that particular campaign. It <strong>will not be saved</strong>.</p>
+
+<h2 id="remove-your-credentials">Remove your credentials</h2>
+
+<p>There is no preview for the credentials saved yet (work in progress). Remove your credential by clicking on the trash icon.</p>
+
+<p><img src="/opendoc-postman-guide/assets/accounts-cred-added.jpg" alt="credential added" /></p>
+
+<p>We will prompt you to make sure that it is the credential that you want to delete. Deletion is not reversible.</p>
+
+<p><img src="/opendoc-postman-guide/assets/accounts-delete-cred.jpg" alt="delete credential" /></p>
+
+<h2 id="request-a-set-of-trial-credentials-for-sms-sending">Request a set of trial credentials for SMS sending.</h2>
+
+<p>Please fill out the following <a href="https://form.gov.sg/5ebcd3b652407a00116942ec" title="FormSG form">form</a> and we will reach out to you.</p>
+
+<h2 id="generate-an-api-key">Generate an API key</h2>
+
+<p>If you would like to use Postman API to send SMS or email, you need to first enter in your credentials under <a href="./before-you-start.html#save-your-credentials" title="credentials">accounts</a>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/accounts-api-gen-1.jpg" alt="api gen 1" /></p>
+
+<p>Copy the API key and you can start using Postman’s API to send SMS or email. 
+<img src="/opendoc-postman-guide/assets/accounts-api-gen-2.jpg" alt="api gen 2" /></p>
+
+<h2 id="swagger">Swagger</h2>
+
+<p>Please visit our <a href="https://api-staging.postman.gov.sg/docs/" title="Postman Swagger File">swagger</a>  documentation for more information about <a href="https://api-staging.postman.gov.sg/docs/" title="Postman Swagger File">Postman’s API</a></p>
+
+<p><img src="/opendoc-postman-guide/assets/swagger.jpg" alt="swagger doc" /></p>
+
+<h1 id="section-1b-email">Section 1b. Email</h1>
+
+<p><img src="/opendoc-postman-guide/assets/HomeEmpty.svg" alt="home empty graphic" /></p>
+
+<h2 id="no-set-up-is-required">No set up is required</h2>
+<p>Unlike SMS and WhatsApp, Postman will handle the email sending for you. You do not need to do anything. Simply log in and start using Postman.</p>
+
+<h2 id="what-email-address-will-be-in-the-from-field-if-i-were-to-send-my-messages-out-via-postman">What email address will be in the from field if I were to send my messages out via Postman?</h2>
+<p>The from field will be donotreply@mail.postman.gov.sg.</p>
+
+<h2 id="how-can-i-format-my-email">How can I format my email?</h2>
+<p>Go to <a href="./poweruser" title="Section 3: Power User">Section 3: Power User</a></p>
+
+<h1 id="section-4-faqs">Section 4: FAQs</h1>
+<h2 id="access">Access</h2>
+<h3 id="i-dont-have-an-email-address-that-ends-with-govsg-can-i-use-postman">I don’t have an email address that ends with gov.sg. Can I use Postman?</h3>
+
+<p>Yes, please fill out the following <a href="https://go.gov.sg/postman-non-gov-sg-application" title="Form for non gov sg user">form</a> and we will get back to you.</p>
+
+<h2 id="browser-compatibility">Browser Compatibility</h2>
+
+<p>We only support Chrome, Firefox, and Samsung Internet at the moment. We have had issues with Postman on Internet Explorer 11 and we are actively fixing this issue.</p>
+
+<h2 id="credentials">Credentials</h2>
+<h3 id="can-i-see-what-postman-has-before-entering-a-credential">Can I see what Postman has before entering a credential?</h3>
+
+<p>Yes, please go to <a href="/step-by-step-guide/" title="Section 2: Step by step">section 2</a>.</p>
+
+<h3 id="how-would-i-know-that-my-credentials-are-working">How would I know that my credentials are working?</h3>
+
+<p>Before you send an SMS or WhatsApp message to the citizens, we will ask you to put in your credentials and send a message to yourself to test the credentials. We recommend that you log onto Twilio so that you can copy and paste in the credentials when prompted.</p>
+
+<h3 id="i-dont-know-how-to-find-my-twilio-credentials">I don’t know how to find my Twilio credentials!</h3>
+
+<p>Go to <a href="/before-you-start/#setting-up-your-twilio-account/" title="Section 1: Before You Start">Before You Start</a> for more info.</p>
+
+<h2 id="features">Features</h2>
+<h3 id="we-want-to-manage-subscription-like-mci-is-postman-going-to-support-this">We want to manage subscription like MCI. Is Postman going to support this?</h3>
+
+<p>Subscription is currently not in the scope of Postman. It will likely be part of other productivity products under OGP.</p>
+
+<h3 id="we-want-an-audit-function-so-we-can-check-the-sms-sent-timestamp">We want an audit function so we can check the SMS sent timestamp.</h3>
+
+<p>We are not going to cover this feature in the first iteration of Postman. You can check when a SMS is sent by logging into your Twilio console and searching for the phone number. Your agency is the only one that can check through your Twilio account. We will not be able to access it.</p>
+
+<h2 id="billing">Billing</h2>
+<h3 id="i-noticed-that-uk-notify-supports-invoicing-is-postman-going-to-do-the-same">I noticed that UK Notify supports invoicing. Is Postman going to do the same?</h3>
+
+<p>Postman does not bill the user separately. We believe in transparency in the pricing of our service. OGP will bear the cost of Postman’s infra. We ask the agencies to pay for the SMS and WhatsApp message cost given that these are operational costs.</p>
+
+<h3 id="how-does-twilio-charge-my-agency">How does Twilio charge my agency?</h3>
+
+<p>Depending on your usage, Twilio has a few different plans. If you do pay-as-you-go, you only need a corporate credit card on file. It works like prepaid mobile plan. You top-up certain amounts of money every month and deplete the account as you send SMS. Post-paid mobile plans requires you to contact Twilio’s rep and initiate a procurement process that adheres to IM8 guidelines. Contact WhatsApp Business sales representatives to find out more about their business plans. Go to <a href="/twilio-sms/" title="Postman Guide Before You Start">Before You Start - Twilio &amp; SMS</a> for more info.</p>
+
+<h3 id="is-there-a-bulk-tender-for-twilio">Is there a bulk tender for Twilio?</h3>
+
+<p>There is no bulk tender for Twilio at the moment. You can email <code class="language-plaintext highlighter-rouge">postman@open.gov.sg</code> to indicate your interest. We are collating the number of agencies that are interested in bulk tender.</p>
+
+<p><img src="/opendoc-postman-guide/assets/AdminLanding.svg" alt="landing page graphic" /></p>
+
+<h2 id="what-can-postman-do">What can Postman do?</h2>
+
+<p>Postman lets government officials mass send messages to citizens through SMS and email with minimal setup required through a user interface.</p>
+
+<h2 id="what-problems-is-postman-solving">What problems is Postman solving?</h2>
+
+<ol>
+  <li><strong>Communication is manual</strong>: Agency users are still calling or sending individual SMS to citizens.</li>
+  <li><strong>Existing tool is not meeting the needs of users</strong>: Outlook does not support mass sending and it is often capped at 1000 emails.</li>
+  <li><strong>No official source of information</strong>: Communications come in many different forms. Lacking a consistent channel puts agencies at risk of phishing attack.</li>
+</ol>
+
+<h2 id="why-should-you-use-postman">Why should you use Postman?</h2>
+
+<ol>
+  <li>Reliable</li>
+  <li>Reattempt delivery</li>
+  <li>Track engagement</li>
+</ol>
+
+<h2 id="is-postman-free">Is Postman free?</h2>
+
+<p>Sending an email is free. SMS will be charged based on Twilio’s SMS <a href="https://www.twilio.com/pricing" title="Twilio's Pricing">rates</a>.</p>
+
+<h2 id="is-postman-secure">Is Postman secure?</h2>
+
+<p>Email and SMS is not 100% secure. We recommend that you don’t put any sensitive information in the email or sms content. Some of our users generate a recipient specific unique link that opens up to a locked page. We will be undergoing VAPT in June 2020.</p>
+
+<h2 id="can-i-access-postman-in-the-government-intranet">Can I access Postman in the government intranet?</h2>
+
+<p>Postman is only available on the internet at the moment. We will announce it under <a href="./release-notes" title="Section 5: Release Notes &amp; Roundups">release notes and round ups</a> when Postman can be accessed through the government intranet.</p>
+
+<h2 id="data-classification">Data classification</h2>
+
+<p>When in doubt, you should follow IM8’s guidelines on data classification. Postman recommends that you write messages that are <strong>open</strong> and meant for the public.</p>
+
+<h2 id="contribute-to-our-open-source-code">Contribute to our open-source code</h2>
+
+<p>We have open-source Postman. Visit our <a href="https://github.com/opengovsg/postmangovsg" title="Postman Github repo">Github repo</a> to start contributing to our code. Contributing guidelines can be found <a href="https://github.com/opengovsg/postmangovsg/blob/develop/docs/CONTRIBUTING.md" title="Github contributing guidelines">here</a>.</p>
+
+<h1 id="section-3-power-user">Section 3: Power User</h1>
+
+<h2 id="send-rate">Send rate</h2>
+<p>Baseline sending rate for Twilio is at 10 messages per second. You do not need to put in anything if you don’t have a custom send rate from Twilio.</p>
+
+<p>If you contacted Twilio to increase your send rate because you send &gt; 10k SMS at a time and require the SMS to be quickly sent out before the next batch, you can easily put in your send rate in step 4 right before sending your campaign (see redbox).</p>
+
+<p><img src="/opendoc-postman-guide/assets/sendrate.jpg" alt="send rate" /></p>
+
+<h2 id="email-formatting">Email formatting</h2>
+<p>You can format your emails.</p>
+
+<p><strong>Bold</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;b&gt;Postman&lt;/b&gt;
+</code></pre></div></div>
+
+<p><ins>Underline</ins></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;u&gt;Postman&lt;/u&gt;
+</code></pre></div></div>
+
+<p><em>Italic</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;i&gt;Postman&lt;/i&gt;
+</code></pre></div></div>
+
+<p>Hyperlink (<a href="https://postman.gov.sg" title="Postman">Postman</a>)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="https://postman.gov.sg"&gt;postman&lt;/a&gt;
+</code></pre></div></div>
+
+<p>We do not support images in our email template at the moment.</p>
+
+<h1 id="privacy-policy">Privacy Policy</h1>
+
+<p>This Privacy Policy must be read in conjunction with the Terms of Use that accompany the applicable service you are requesting from us (the “Service”). In this Privacy Policy, “Public Sector Entities” means the Government (including its ministries, departments and organs of state) and public authorities (such as statutory boards).</p>
+
+<ol>
+  <li>
+    <p>Insofar as the Service consists of or is provided to you through a website, please note that:</p>
+
+    <p>1.1. We may use “cookies”, where a small data file is sent to your browser to store and track information about you when you enter our websites. The cookie is used to track information such as the number of users and their frequency of use, profiles of users and their preferred sites. While this cookie can tell us when you enter our sites and which pages you visit, it cannot read data off your hard disk.</p>
+
+    <p>1.2. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.</p>
+  </li>
+  <li>
+    <p>We may request certain types of data from you in connection with your access or use of the Service. The data that may be requested include those identified in the Annex herein. Your data may be stored in our servers, systems or devices, in the servers, systems or devices of our third party service providers or collaborators, or on your device, and may be used by us or our third party service providers or collaborators to facilitate your access or use of the Service.</p>
+  </li>
+  <li>
+    <p>If you provide us with personally identifiable data:</p>
+
+    <p>3.1. We may use, disclose and process the data for any one or more of the following purposes:</p>
+
+    <p>3.1.1. to assist, process and facilitate your access or use of the Service;</p>
+
+    <p>3.1.2. to administer, process and facilitate any transactions or activities by you, whether with us or any other Public Sector Entity or third party service provider or collaborator, and whether for your own benefit, or for the benefit of a third party on whose behalf you are duly authorized to act;</p>
+
+    <p>3.1.3. to carry out your instructions or respond to any queries, feedback or complaints provided by (or purported to be provided by) you or on your behalf, or otherwise for the purposes of responding to or dealing with your interactions with us;</p>
+
+    <p>3.1.4. to monitor and track your usage of the Service, to conduct research, data analytics, surveys, market studies and similar activities, in order to assist us in understanding your interests, concerns and preferences and improving the Service and other services and products provided by Public Sector Entities. For the avoidance of doubt, we may also collect, use, disclose and process such information to create reports and produce statistics regarding your transactions with us and your usage of the Services and other services and products provided by Public Sector Entities for record-keeping and reporting or publication purposes (whether internally or externally);</p>
+
+    <p>3.1.5. for the purposes of storing or creating backups of your data (whether for contingency or business continuity purposes or otherwise), whether within or outside Singapore;</p>
+
+    <p>3.1.6. to enable us to contact you or communicate with you on any matters relating to your access or use of the Service, including but not limited to the purposes set out above, via email, push notifications or such other forms of communication that we may introduce from time to time depending on the functionality of the Service and/or your device.</p>
+
+    <p>3.2. We may share necessary data with other Public Sector Entities, and third party service providers in connection with the Service, so as to provide the Service to you in the most efficient and effective way unless such sharing is prohibited by law.</p>
+
+    <p>3.3. We will NOT share your personal data with entities which are not Public Sector Entities, except where such sharing is necessary for such entities to assist us in providing the Service to you or for fulfilling any of the purposes in this Clause 3.</p>
+
+    <p>3.4. For your convenience, we may also display to you data you had previously supplied us or other Public Sector Entities. This will speed up the transaction and save you the trouble of repeating previous submissions. Should the data be out-of-date, please supply us the latest data.</p>
+  </li>
+  <li>
+    <p>To safeguard your personal data, all electronic storage and transmission of personal data is secured with appropriate security technologies.</p>
+  </li>
+  <li>
+    <p>You may withdraw your consent to the use and disclosure of your data by us with reasonable notice and subject to any prevailing legal or contractual restrictions; however, doing so may prevent the proper functioning of the Service and may also result in the cessation of the Service to you.</p>
+  </li>
+  <li>
+    <p>The Service may contain links to external sites whose data protection and privacy practices may differ from ours. We are not responsible for the content and privacy practices of these other websites and encourage you to consult the privacy notices of those sites.</p>
+  </li>
+  <li>
+    <p>Please contact postman@open.gov.sg if you:</p>
+
+    <p>7.1. have any enquiries or feedback on our data protection policies and procedures; or</p>
+
+    <p>7.2. need more information on or access to data which you have provided to us in the past.</p>
+  </li>
+</ol>
+
+<p>This version of the Privacy Policy is dated 21 May 2020.</p>
+
+<h2 id="annex">Annex</h2>
+<p><strong>Name of Service</strong>: Postman.gov.sg</p>
+
+<p>Types of data collected/requested</p>
+
+<p>a. User email</p>
+
+<p>b. Message template</p>
+
+<p>This Annex was last updated on 21 May 2020.</p>
+
+<h1 id="report-bugs">Report Bugs</h1>
+
+<h2 id="found-a-bug">Found a Bug?</h2>
+<p>Please read through the following before you report a bug.</p>
+
+<ol>
+  <li><strong>Found a bug? Check if the bug is known.</strong> Someone else might have caught the same bug as you. Please check whether or not the bug you are experiencing is documented in our <a href="https://github.com/datagovsg/postmangovsg/issues/" title="Postman Github">Github</a>.</li>
+</ol>
+
+<p><img src="/opendoc-postman-guide/assets/github-issue.jpg" alt="github issue" /></p>
+
+<ol>
+  <li>
+    <p><strong>Report it immediately.</strong> Reporting a bug is like reporting news. Timeliness matters! Report it while it is fresh in your head.</p>
+  </li>
+  <li>
+    <p><strong>Reproduce the bug more than one time before you report it.</strong> Bugs should be reproducible. Go through the same steps to see if the same bug occurred. If your bug is not reproducible, you can still file a bug report but be sure to mention its sporadic nature.</p>
+  </li>
+  <li>
+    <p><strong>Detailed summary.</strong> Identify exactly what the problem is. It helps us greatly if you can tell us exactly what is wrong and how to reproduce the bug. Let us know which browser you used. Copy and paste the entire error message (if any) in your report.</p>
+  </li>
+  <li>
+    <p><strong>Screenshots, videos, log files.</strong> This is how our internal team communicates when there is a bug. A screenshot is worth a thousand words!</p>
+  </li>
+</ol>
+
+<p><strong>Submit a <a href="https://form.gov.sg/5e8db1736d789b0011743202/" title="Postman Bug Report">Bug Report</a></strong></p>
+
+<h1 id="section-2-step-by-step-guide">Section 2: Step by Step Guide</h1>
+
+<h2 id="step-1-create-a-message-template">Step 1: Create a Message Template</h2>
+
+<p>Postman allows you to control how much personalisation should be sprinkled in each message. Message templates can be used in a few ways:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Message Template</th>
+      <th style="text-align: left">Use Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">No { }</td>
+      <td style="text-align: left">Generic message for everyone</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mostly standardised content with a few { } like {name} {item} for fields that are relevant</td>
+      <td style="text-align: left">Appointment reminder</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">{message}</td>
+      <td style="text-align: left">Unique message for everyone</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="step-2-set-up-a-csv-contact-list">Step 2: Set up a CSV contact list</h2>
+
+<p>Most of our users have an internal database that includes all of their contact.You can export the contact list in a csv file.</p>
+
+<p><img src="/opendoc-postman-guide/assets/tip-excel-csv-convert.png" alt="excel convert to csv" /></p>
+
+<p>Download the SMS campaign <a href="https://drive.google.com/file/d/1kwYZQVOTrehUe9-iHMBh2OHNrTQAHsD-/view?usp=sharing" title="Postman csv template">csv template</a> for reference.</p>
+
+<ul>
+  <li>Make sure the headers are in <strong>lowercase</strong>.</li>
+  <li>Make sure there is a field call <strong>recipient</strong> that will contain the phone number or email address.</li>
+  <li>Email should be formatted like <strong>abc@gmail.com</strong>.</li>
+  <li>Phone number should be formmated like <strong>88888888</strong> with no space, no dash, and no +65.</li>
+</ul>
+
+<h2 id="example-sms-flow">Example: SMS flow</h2>
+<p><img src="/opendoc-postman-guide/assets/postman-sms.gif" alt="sms gif" /></p>
+
+<h2 id="example-email-flow">Example: Email flow</h2>
+<p><img src="/opendoc-postman-guide/assets/postman-email.gif" alt="email gif" /></p>
+
+<h1 id="terms-of-use">Terms of Use</h1>
+
+<h3 id="1--general">1 . General</h3>
+
+<p>1.1.  These Terms of Use govern your access to and use of our services, including the application (whether as software or as a website or otherwise), its contents, push notifications and all other accompanying materials as identified in the Schedule below (collectively, the “Service”).</p>
+
+<p>1.2.  This Service is provided to you by the Government Technology Agency (“GovTech”). GovTech’s office is located at 10 Pasir Panjang Road, #10-01, Mapletree Business City, Singapore 117438.</p>
+
+<p>1.3.  By accessing or using any part of this Service, you unconditionally agree and accept to be legally bound by these Terms of Use and any amendments thereto from time to time. GovTech reserves the right to change these Terms of Use at its sole discretion and at any time. You should read the Terms of Use carefully each time you access or use any part of this Service as such access or use will constitute your agreement to the Terms of Use and any amendments to it.</p>
+
+<p>1.4.  If you do not agree to these Terms of Use, please do not use this Service or any part of this Service.</p>
+
+<p>1.5.  If you are accessing or using the Service for and on behalf of another entity (such as your employer), you warrant and represent that you have the necessary authority to bind such entity to these Terms of Use.</p>
+
+<h3 id="2-nature-of-this-service">2. Nature of this Service</h3>
+
+<p>Please see the Schedule for more information and terms concerning this Service.</p>
+
+<h3 id="3--licence-terms-and-restrictions">3.  Licence Terms and Restrictions</h3>
+
+<p>3.1.  The Service, including the materials made available on or through the Service, is owned by, licensed to, managed or controlled by GovTech. Please see clause 4 (Third Party Materials) for more information.</p>
+
+<p>3.2.  Subject to these Terms of Use, GovTech grants to you a non-exclusive, revocable, and non-transferable right to access and use the Service for personal or internal purposes only, and only for such use permitted by the functions of the Service and intended by GovTech. You shall not, amongst other things, benchmark, reproduce, modify, reverse-engineer, decompile, adapt, publish, redistribute or sublicense the Service or any part of the Service without the prior written consent of GovTech or the respective third party owners. You also shall not use the Service in violation of any applicable laws or agreements that you have with any third parties. All express or implied rights to the Service not specifically granted herein are expressly reserved to GovTech.</p>
+
+<p>3.3.  GovTech reserves the right to:</p>
+
+<p>3.3.1.  Update or modify this Service from time to time;</p>
+
+<p>3.3.2.  Deny or restrict access to or use of the Service by any particular person without ascribing any reasons whatsoever; and</p>
+
+<p>3.3.3.  Discontinue or terminate this Service at any time without notice or liability to you whatsoever, whereupon all rights granted to you hereunder shall also terminate forthwith. You shall further upon notice from GovTech return or destroy all copies of the Service or materials therein that you may have downloaded.</p>
+
+<p>3.4.  You will not interfere or attempt to interfere with the proper working of the Service or otherwise do anything that imposes an unreasonable or disproportionately large load on GovTech’s servers.</p>
+
+<p>3A. Account Access and Security</p>
+
+<p>3A.1 You are solely responsible for maintaining the confidentiality and security of any authentication credentials associated with your use of the Service, including the security of any of your devices which store the authentication credentials.</p>
+
+<p>3A.2 GovTech shall be entitled, but not obliged, to verify the identity of the person using the Service. Without prejudice to the foregoing, GovTech is not under any duty to verify that any biometric identifier used with the Service, or on your device, belongs to you.</p>
+
+<p>3A.3 GovTech shall have the sole and absolute discretion to invalidate any authentication credentials at any time, or require you to have to re-authenticate or refresh your authentication credentials at any time, without having to give any reason for the same.</p>
+
+<p>3A.4 GovTech shall be entitled, but not obliged, to act upon or rely on any instructions, information, transmissions of data, or communications received from the account or use of the Service in relation to your authentication credentials, as if such instructions, information, data or communications were issued by you, whether or not the same was authorized by you.</p>
+
+<p>3A.5 For the avoidance of doubt, you are solely responsible for any loss of whatever nature arising from unauthorized or unofficial modifications made to your device which permit or escalate privileged access, or remove restrictions to such access, which are not intended by the manufacturer or provider of your device or operating system of your device (e.g., “rooting” or “jailbreaking” your mobile phone).</p>
+
+<h3 id="4--third-party-materials">4.  Third Party Materials</h3>
+
+<p>4.1.  The Service may require, enable or facilitate access to or use of software or services of a third party (“Third Party”). In such an event, there may be terms of use of the third party software or service (the “Third Party Terms”). GovTech may be required under or as a result of the Third Party Terms to notify you of certain terms that apply to you (either directly as an end user, or as a party whose acts or omissions could cause GovTech to breach the Third Party Terms) when you use the Services. An example of Third Party Terms may be open source software terms or standard form terms of the distribution platform from which you obtain any part of the Service (e.g. Google Play Store or Apple App Store terms) which bind GovTech as a developer or user of the distribution platform (the “Distribution Terms”). Information on the Third Party Terms are embedded in the Service, already accounted for in these Terms of Use, publicly available (e.g the Distribution Terms) or otherwise listed in the Schedule herein. For the avoidance of doubt, insofar as this Clause 4 relates to the Distribution Terms, the relevant Distribution Terms are the terms of the specific platform from which you obtained a copy of the software or application that is part of the Service. For example, if you obtained the said copy from the Google Play Store, then the relevant terms are Google’s Distribution Terms.</p>
+
+<p>4.2.  It is your responsibility to check and read the most up-to-date versions of these Third Party Terms and you are deemed to have notice of the same. In particular, you are deemed to have notice of the Third Party Terms that GovTech (under the Third Party Terms) is required to notify you, and you unconditionally agree to be bound by all the obligations in the Third Party Terms which are applicable to you as the end user. For the avoidance of doubt, where Third Party Terms are listed, such Third Party Terms shall be deemed to include any privacy policies and acceptable use policies as are applicable to you.</p>
+
+<p>4.3.  If the Third Party Terms require you to enter into an agreement directly with the Third Party, then you unconditionally agree to enter into such agreement, and in any event, to be legally bound by the Third Party Terms. For the avoidance of doubt:</p>
+
+<p>4.3.1.  some Third Party Terms (particularly open-source terms) permit either a direct licence to you from the Third Party or a sublicence from GovTech to you. In such cases, your licence is a direct licence from the Third Party to you; and</p>
+
+<p>4.3.2.  the terms of your agreement with the Third Party will govern your use of the relevant third party software or service, and not these Terms of Use.</p>
+
+<p>4.4.  If the Third Party Terms expressly or impliedly require GovTech to incorporate certain terms in these Terms of Use (inclusive of terms which impose any minimum or maximum standards herein, and/or terms described in Clause 4.5  below), such terms are deemed to have been so incorporated (the “Incorporated Terms”). Examples of Incorporated Terms include provisions which require GovTech to give you notice of certain rights and liabilities or require GovTech to ensure that you acknowledge certain matters. Similarly, if the Third Party Terms expressly or impliedly require these Terms of Use to be altered such that the Third Party Terms are complied with, the parties herein agree that the Terms of Use shall be deemed to be so altered but only to the extent necessary for compliance.</p>
+
+<p>4.5.  Some Third Party Terms grant the Third Party, or require GovTech to grant the Third Party, direct rights of enforcement of these Terms of Use as a third party beneficiary, against you. Such Third Party Terms are deemed to have been incorporated into these Terms of Use as Incorporated Terms, and you hereby agree to grant such Third Party, such direct rights of enforcement against you.</p>
+
+<p>4.6.  For the avoidance of doubt, without prejudice to Clause 4.4, to the extent of any inconsistency between these Terms of Use and the Third Party Terms, the latter shall prevail provided nothing in the Third Party Terms increases the liability of GovTech beyond that stated in Clause 6.</p>
+
+<h3 id="5--your-consent-to-access-functions-of-your-device">5.  Your Consent to Access Functions of Your Device</h3>
+
+<p>Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see privacy policy. Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.</p>
+
+<p>5A. Ownership of Feedback/Requests/Suggestions</p>
+
+<p>You agree that all title and interest in any feedback, requests or suggestions from you concerning the Services shall be owned by GovTech.</p>
+
+<p>5B. Confidentiality</p>
+
+<p>5B.1 If you receive information or data (in whatever form) from GovTech or a Third Party which is designated confidential or proprietary or is otherwise reasonably understood to be confidential or proprietary (collectively, “Confidential Information”), you shall not use, disclose or reproduce the Confidential Information except for the purpose for which it was provided to you. If consent to disclose the Confidential Information to a third party is given by GovTech or the Third Party to you, any act or omission in respect of the Confidential Information by that person shall be deemed to be your act or omission and you agree to be fully liable for the same. In all cases, you shall protect the Confidential Information to the same extent you protect your own confidential information but in no event less than a reasonable standard of care. You shall ensure that any recipients are bound by confidentiality terms at least as restrictive as this Clause.</p>
+
+<p>5B.2 You shall destroy any Confidential Information immediately upon request by GovTech or the Third Party.</p>
+
+<p>5B.3 In the event:</p>
+
+<p>5B.3.1 you are, or likely to be, required by an order of court to disclose Confidential Information; or</p>
+
+<p>5B.3.2 you have reasonable grounds to suspect the unauthorised use or disclosure or reproduction of Confidential Information;</p>
+
+<p>you shall immediately notify GovTech or the Third Party of the same and cooperate with GovTech or the Third Party to prevent or limit such disclosure.</p>
+
+<p>5B.4 Nothing in this Clause 5B shall prejudice GovTech’s or the Third Party’s other rights at law.</p>
+
+<h3 id="6--disclaimers-and-indemnity">6.  Disclaimers and Indemnity</h3>
+
+<p>6.1.  The Service is provided on an “as is” and “as available” basis without warranties of any kind. To the fullest extent permitted by law, GovTech does not make any representations or warranties of any kind whatsoever in relation to the Service and hereby disclaims all express, implied and/or statutory warranties of any kind to you or any third party, whether arising from usage or custom or trade or by operation of law or otherwise, including but not limited to any representations or warranties:</p>
+
+<p>6.1.1.  as to the accuracy, completeness, correctness, currency, timeliness, reliability, availability, interoperability, security, non-infringement, title, merchantability, quality or fitness for any particular purpose of the Service; and/or</p>
+
+<p>6.1.2.  that the Service or any functions associated therewith will be uninterrupted or error-free, or that defects will be corrected or that this Service, website and the server are and will be free of all viruses and/or other malicious, destructive or corrupting code, programme or macro.</p>
+
+<p>6.2.  GovTech shall also not be liable to you or any third party for any damage or loss of any kind whatsoever and howsoever caused, including but not limited to any direct or indirect, special or consequential damages, loss of income, revenue or profits, lost or damaged data, or damage to your computer, software or any other property, whether arising directly or indirectly from –</p>
+
+<p>6.2.1.  your access to or use of this Service, or any part thereof;</p>
+
+<p>6.2.2.  any loss of access or use of this Service or any part of this Service, howsoever caused;</p>
+
+<p>6.2.3.  any inaccuracy or incompleteness in, or errors or omissions in the transmission of, the Service;</p>
+
+<p>6.2.4.  any delay or interruption in the transmission of the Service, whether caused by delay or interruption in transmission over the internet or otherwise; or</p>
+
+<p>6.2.5.  any decision made or action taken by you or any third party in reliance upon the Service,</p>
+
+<p>regardless of whether GovTech has been advised of the possibility of such damage or loss.</p>
+
+<p>6.3.  Without prejudice and in addition to the foregoing, insofar as the Service facilitates or requires the provision, use or functioning of, or is provided in conjunction with, other products, software, materials and/or services not provided by GovTech, GovTech makes no representation or warranty in relation to such products, software, materials and/or services (including without limitation any representation or warranties as to timeliness, reliability, availability, interoperability, quality, fitness for purpose, non-infringement, suitability or accuracy).</p>
+
+<p>6.4.  You shall not rely on any part of the Service to claim or assert any form of legitimate expectation against GovTech, whether or not arising out of or in connection with GovTech’s roles and functions as a public authority.</p>
+
+<p>6.5.  You agree to defend and indemnify and keep GovTech and its officers, employees, agents and contractors harmless against all liabilities, losses, damages, costs or expenses (including legal costs on an indemnity basis) howsoever arising out of or in connection with your access or use of the Service (including third party software or services) or your non-compliance with the Terms of Use, Third Party Terms or Incorporated Terms, whether or not you had been advised or informed of the nature or extent of such liabilities, losses, damages, costs or expenses. You warrant and represent that your access or use of the Service does not and will not breach or violate any laws, regulations, trade, economic and/or export sanctions (wherever in the world) applicable to you, and that you shall not transmit any malicious code, illegal, infringing or undesirable content or materials to GovTech or its agents or any Third Party.</p>
+
+<h3 id="7--hyperlinks">7.  Hyperlinks</h3>
+
+<p>7.1.  Insofar as the Service provides a hyperlink to material not maintained or controlled by GovTech, GovTech shall not be responsible for the content of the hyperlinked material and shall not be liable for any damages or loss arising from access to the hyperlinked material. Use of the hyperlinks and access to such hyperlinked materials are entirely at your own risk. The hyperlinks are provided merely as a convenience to you and do not imply endorsement by, association or affiliation with GovTech of the contents of or provider of the hyperlinked materials.</p>
+
+<p>7.2.  Caching and hyperlinking to, and the framing of, any part of the Service is prohibited save where you have obtained GovTech’s prior written consent. Such consent may be subject to any conditions as may be determined by GovTech in its sole discretion. If you hyperlink to or frame any part of the Service, that shall constitute your acceptance of these Terms of Use and all amendments thereto. If you do not accept these Terms of Use as may be amended from time to time, you must immediately discontinue linking to or framing of any part of the Service.</p>
+
+<p>7.3.  GovTech reserves all rights:</p>
+
+<p>7.3.1.  to disable any links to, or frames of, any materials which are unauthorised (including without limitation materials which imply endorsement by or association or affiliation with GovTech, materials containing inappropriate, profane, defamatory, infringing, obscene, indecent or unlawful topics, names, or information that violates any written law, any applicable intellectual property, proprietary, privacy or publicity rights); and</p>
+
+<p>7.3.2.  to disclaim responsibility and/or liability for materials that link to or frame any part of the Service.</p>
+
+<h3 id="8--privacy-policy">8.  Privacy Policy</h3>
+
+<p>You also agree to the terms of the Privacy Policy for this Service as may be amended from time to time. The Privacy Policy will form part of these Terms of Use.</p>
+
+<h3 id="9--rights-of-third-parties">9.  Rights of Third Parties</h3>
+
+<p>Subject to the rights of the Third Party, a person who is not a party to this Terms of Use shall have no right under the Contract (Rights of Third Parties) Act or otherwise to enforce any of its terms.</p>
+
+<h3 id="10--assignment">10.  Assignment</h3>
+
+<p>10.1.  You may not assign or sub-contract this Terms of Use without the prior written consent of GovTech.</p>
+
+<p>10.2.  GovTech may assign, novate, transfer, or sub-contract the rights and liabilities in respect of the Service and this Terms of Use, without notifying you and without further reference to you. Your acceptance of this Terms of Use shall also constitute your consent to such assignment, novation, transfer or sub-contract.</p>
+
+<p>10A. Severability</p>
+
+<p>If any term of these Terms of Use is held by a court or tribunal of competent jurisdiction to be invalid or unenforceable, then these Terms of Use, including all of the remaining terms, will remain in full force and effect as if such invalid or unenforceable term had never been included but, to the extent permissible, such invalid or unenforceable terms shall be deemed to have been replaced by terms that are (a) valid and enforceable and (b) express the intention or produce the result closest to the original intention of the invalid or unenforceable terms.</p>
+
+<h3 id="11--governing-law-and-dispute-resolution">11.  Governing Law and Dispute Resolution</h3>
+
+<p>11.1.  These Terms of Use shall be governed by and construed in accordance with laws of Singapore.</p>
+
+<p>11.2.  Subject to clause 11.3, any dispute arising out of or in connection with these Terms of Use, including any question regarding its existence, validity or termination, shall be referred to and finally resolved in the Courts of the Republic of Singapore and the parties hereby submit to the exclusive jurisdiction of the Courts of the Republic of Singapore.</p>
+
+<p>11.3.  GovTech may, at its sole discretion, refer any dispute referred to in clause 11.2 above to arbitration administered by the Singapore International Arbitration Centre (“SIAC”) in Singapore in accordance with the Arbitration Rules of the SIAC (“SIAC Rules”) for the time being in force, which rules are deemed to be incorporated by reference in this clause. Further:</p>
+
+<p>11.3.1.  The seat of the arbitration shall be Singapore.</p>
+
+<p>11.3.2.  The tribunal shall consist of one (1) arbitrator.</p>
+
+<p>11.3.3.  The language of the arbitration shall be English.</p>
+
+<p>11.3.4.  All information, pleadings, documents, evidence and all matters relating to the arbitration shall be confidential.</p>
+
+<p>Where GovTech is the defendant or respondent, it shall be given at least 30 days before the commencement of any legal action against it to elect to exercise the right herein to have the dispute submitted to arbitration. This right to elect shall not prejudice GovTech’s right to a limitation defence and the period to exercise the right shall not be abridged by reason of any accrual of a limitation defence in favour of GovTech during the said period.</p>
+
+<p>These Terms of Use are updated on 6th of May, 2020 .</p>
+
+<p><strong>SCHEDULE</strong></p>
+
+<h4 id="1-name-of-service-postman">1. Name of Service: Postman</h4>
+
+<h4 id="2-nature-of-service">2. Nature of Service</h4>
+
+<p>a. Notwithstanding anything in the Terms of Use, the Service is intended for use by a Singapore public sector agency or a healthcare institution that is under the NHG, SingHealth, or NUHS healthcare clusters only.</p>
+
+<p>b. This Service is a mass messaging tool for the permitted entities (listed in sub-paragraph a above) .</p>
+
+<p>c. You are responsible for ensuring that your use of the Service is compliant with all applicable laws, including without limitation the Personal Data Protection Act and the Spam Control Act.</p>
+
+<p>d. GovTech is not responsible for the content of the messages you choose to send, nor for the contents of any agreement you have (or purport to have) with the recipient of your messages.</p>
+
+<p>e. Use of the Service may require you to already have the right to use certain third party service providers. For example, you may be required to have a Twilio account in order to use the Services. You may be required to provide details of your account in order to use the Services.</p>
+
+<p>f. You warrant and represent to GovTech that (without prejudice to GovTech’s other rights in the Terms of Use such as Clause 3.2 and 6) you have full rights to use such third party services within or with the Service and your acts and/or omissions in respect of the such services will not cause GovTech to incur liability to any third party, including the service provider.</p>
+
+<h4 id="3-third-party-softwareservices">3. Third party software/services</h4>
+
+<p>a. Please see this <a href="https://drive.google.com/open?id=1G3c593hnp7oGOdYWYkyGaU3Y1Qw_bmf1">link</a> for a list of open source components used in the Service.</p>
+
+<p>b. Twilio, Inc.’s <a href="http://www.twilio.com/legal/tos">Terms of Service</a>, Acceptable Use Policy, Privacy Policy (http://www.twilio.com/legal/tos)</p>
+
+<p>c. Amazon Web Services - <a href="https://aws.amazon.com/service-terms/">Service Terms</a> (https://aws.amazon.com/service-terms/)</p>
+
+<h1 id="section-1c-telegram">Section 1c. Telegram</h1>
+
+<h2 id="telegram-bot">Telegram Bot</h2>
+<p>Telegram bot can broadcast message to recipients who are subscribed to the bot. Postman will be supporting agencies to deploy their Telegram bots.</p>
+
+<p><strong>Recipient’s experience</strong>: Recipients will be asked by the agency to subscribe to the agency’s Telegram bot to receive relevant information/broadcast messages from the Telegram bot.</p>
+
+<p>If you are interested in working with OGP on the Telegram bot pilot, please send us an email at postman@open.gov.sg</p>
+
+<h2 id="1-set-up-a-bot">1. Set up a bot</h2>
+<p>Use a dedicated phone card to create an official telegram account.</p>
+
+<h2 id="2-message-botfather-on-telegram-to-set-up-a-bot">2. Message BotFather on Telegram to set up a bot</h2>
+<ol>
+  <li>Start messaging BotFather (telegram.me/BotFather) on telegram and then type  /start.</li>
+  <li>You’ll see a list of commands that help you create, edit, and manage your bots. Since it’s your first time, type /newbot.</li>
+  <li>After giving the /newbot command, you get to pick a name and username for your bot. The name is what your users will see the bot as in their contact list and the username is how they’ll find it.</li>
+  <li>With that done, you’ll be given your bot’s API token. The API token is how Telegram knows the message you send through Postman is associated with this particular bot. Every bot has its own API token, and you shouldn’t share it with anyone or they could hijack your bot.</li>
+</ol>
+
+<h2 id="3-send-us-your-telegram-bot-token">3. Send us your Telegram bot token</h2>
+<p>We are currently doing manual onboarding at the moment. Copy the bot token into a .txt file and use <a href="https://send.firefox.com/" title="Firefox Send">Firefox Send</a> to send us the API token.</p>
+
+<p>You should email us with the following</p>
+
+<p><strong>Subject</strong>: [Agency Name] Interest in Telegram Bot Pilot</p>
+
+<p><strong>Content</strong>: The link to the Firefox Send file.</p>
+
+<p>Firefox send lets you share files with end-to-end encryption and a link that automatically expires. Please set the download to 1 time only. This means that the Postman team would be the only people that can download the file. If you want to be extra safe then send us the link in one email and send us the password in a separate email. You can set a password lock for the link.</p>
+
+<h1 id="section-1a-twilio--sms">Section 1a: Twilio &amp; SMS</h1>
+
+<h2 id="what-is-twilio">What is Twilio?</h2>
+<p><a href="https://www.twilio.com/" title="Twilio's Homepage">Twilio</a> is a cloud communication service that allows the users to send messages through an Application Program Interface (API).</p>
+
+<h2 id="how-is-postman-different-from-twilio">How is Postman different from Twilio?</h2>
+<ol>
+  <li><strong>UI</strong>
+    <ul>
+      <li>Postman provides a user friendly interface for users to easily access what Twilio has to offer.</li>
+    </ul>
+  </li>
+  <li><strong>API</strong>
+    <ul>
+      <li>Optimises the <strong>rate limit</strong> to send messages in bulk</li>
+      <li>Allows the user to <strong>cancel</strong> the campaign</li>
+      <li>Allows the user to <strong>retry</strong> for messages that encounter errors during the first attempted delivery</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="why-did-postman-choose-twilio">Why did Postman choose Twilio?</h2>
+<p>We evaluated other cloud service providers before we chose Twilio. We have used Twilio for SMS sending service for NDP ticketing, Digital MC, SGH’s elective surgery appointment receipt and reminder, MOH’s quarantine notice, and ICA’s location checking for those who are on quarantine notice.</p>
+
+<p><strong>Easy to setup &amp; well documented API</strong></p>
+
+<p>Twilio, Nextmo and AWS SNS are all cloud base SMS solutions. Twilio’s primary benefit is that there is a simple user interface with an interactive debugger. Our developers have experiences integrating with Twilio. Twilio is known for its simple, and well documented API. Given that it is easy for us to integrate with Twilio and save significant manpower hours on setting up our own SMS gateway, Twilio was chosen as the service provider.</p>
+
+<p><strong>Reliability &amp; availability</strong></p>
+
+<p>Twilio API success rate is 99.999% &amp; uptime is ~ 99.95% (per month).
+Nexmo does not publicly declare its API success rate and uptime.
+AWS does not publicly declare its API success rate but uptime is ~99.90% (per month).</p>
+
+<h2 id="how-can-i-sign-up-for-a-twilio-account">How can I sign-up for a Twilio account?</h2>
+<p>You can go to <a href="https://www.twilio.com/" title="Twilio's Homepage">Twilio.com</a> to sign up for an account. Twilio provides simple and flexible <a href="https://www.twilio.com/pricing" title="Twilio's Pricing">pricing plans</a> for different tiers of users.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Payment Schemes</th>
+      <th style="text-align: left">What do you need?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Pay-as-you-go</td>
+      <td style="text-align: left">Corporate credit card</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Volume discount</td>
+      <td style="text-align: left">Procure by contacting Twilio sales</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Committed-use discounts</td>
+      <td style="text-align: left">Procure by contacting Twilio sales</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="where-can-i-find-credentials-on-the-twilio-console">Where can I find credentials on the Twilio console?</h2>
+
+<h2 id="1-account-sid--auth-token">1. Account SID &amp; Auth Token</h2>
+<p>Your credentials should be on the dashboard when you login to Twilio’s console.</p>
+
+<p><img src="/opendoc-postman-guide/assets/projectlevel-sid.jpg" alt="project sid" /></p>
+
+<p>An alternative way to access your credential is through <strong>Project &gt; Project Settings &gt; API Credentials</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/twilio_cred.png" alt="twilio credentials" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/tip-twilio-account.png" alt="twilio account setup tip" />
+This is particularly useful for a large agency with many users. Your agency might ask you to create a subproject in Twilio to track your usage. An example would be <strong>MOE</strong> at the <strong>project level</strong> and <strong>Course: ecology 101</strong> at the <strong>subproject level</strong> for ecology 101’s teacher to send SMS to parents.</p>
+
+<p><img src="/opendoc-postman-guide/assets/project-subproject-ex.png" alt="project subproject" /></p>
+
+<p>If you fall under a subproject, you need to navigate to <strong>Project &gt; Project Settings &gt; Subproject &gt; “Subproject name like Course: ecology 101” &gt; Settings &gt; General</strong> to obtain your subproject SID. Twilio console will indicate that you are viewing settings under a subproject using an orange font on the navigation bar.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subproj-sid.jpg" alt="subproject sid" /></p>
+
+<h2 id="2-set-up-a-standard-api-key">2. Set up a Standard API Key</h2>
+
+<p>Click on <strong>Create new API Key</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-create-new.jpg" alt="api create new" /></p>
+
+<p>Create a new <strong>standard</strong> API key. You can rename the friendly name.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-create-standard.jpg" alt="api create standard" /></p>
+
+<p>We need your <strong>SID</strong> and <strong>secret</strong> for Postman. Please keep these safe. Remember to save the <strong>secret</strong> somewhere before you click on <strong>Done</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-creation-success.jpg" alt="api creation success" /></p>
+
+<h2 id="3-set-up-messaging-service">3. Set up Messaging Service</h2>
+
+<p>Click on <strong>Create new Messaging Service</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-serv-creation.jpg" alt="create messaging service" /></p>
+
+<p>Create a <strong>new messaging service</strong>. You can rename the friendly name.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-creation.jpg" alt="create messaging service modal" /></p>
+
+<p>Select drop the message &amp; press save.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-serv-setup.jpg" alt="create messaging service setting" /></p>
+
+<p>Go back to <strong>SMS &gt; Messaging Service</strong>. You will see the newly created messaging service. You can click on it to buy a phone number.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-messaging-serv.jpg" alt="create messaging service overview " /></p>
+
+<p><img src="/opendoc-postman-guide/assets/tip-twilio-upgrade-acct.png" alt="upgrade" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-upgrade-proj.jpg" alt="upgrade" /></p>
+
+<h2 id="4-buy-a-number">4. Buy a number</h2>
+
+<p>You need to purchase a phone number to start using Postman.</p>
+
+<p>You can use a US number and mask the number with an <a href="https://support.twilio.com/hc/en-us/articles/223181348-Getting-Started-with-Alphanumeric-Sender-ID-for-Twilio-Programmable-SMS/" title="Twilio alphanumeric sender ID">alphanumeric sender ID</a>. Singapore number is only needed for 2-way SMS. Postman will support 1-way SMS at the start.</p>
+
+<p><img src="/opendoc-postman-guide/assets/phonenum.jpg" alt="phone number" /></p>
+
+<p>If you wish to purchase a Singapore phone number that starts with +65, you need to complete a regulatory bundle. It will ask for an ID and business details for verification.</p>
+
+<p><img src="/opendoc-postman-guide/assets/reg-bundle.jpg" alt="complete regulatory bundle" /></p>
+
+<p>Once your application for regulatory bundle has been approved then you can search for a phone number that starts with +65.</p>
+
+<p><img src="/opendoc-postman-guide/assets/buy-num-1.jpg" alt="search phone number" /></p>
+
+<p>Singapore phone number is $75 per month. We recommend that you buy a US phone number which is $1 per month if you are not doing 2-way messaging. SMS cost depends on the country code of the phone number. Please take note that a US phone number might cost more to send SMS.</p>
+
+<p><img src="/opendoc-postman-guide/assets/buy-num-2.jpg" alt="buy phone number" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/alert-release-number.png" alt="do not release number" /></p>
+
+<p>Once you have bought a number, you can go back to <strong>Messaging Service</strong> to complete the set up by linking a phone number to your messaging service.</p>
+
+<h2 id="5-alphanumeric-sender-id">5. Alphanumeric Sender ID</h2>
+
+<p>You can go to <strong>Programmable SMS &gt; Messaging Service &gt; Select the name of the Messaging Service &gt; Features &gt; Alpha Sender ID</strong> (see box in red) to enter in your alphanumeric sender ID.</p>
+
+<p><img src="/opendoc-postman-guide/assets/alphasenderid.jpg" alt="alpha sender id" /></p>
+
+
+    </div>
+  </body>
+
+</html>

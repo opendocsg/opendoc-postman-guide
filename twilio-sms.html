@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Section 1a: Twilio &amp; SMS</title>
+  <meta name="description" content="Section 1a: Twilio &amp; SMS
+
+What is Twilio?
+Twilio is a cloud communication service that allows th">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="/opendoc-postman-guide/site.styling_options.logo_path">
+
+  <link rel="icon" href="/opendoc-postman-guide/assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/opendoc-postman-guide/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/opendoc-postman-guide/assets/styles/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Postman.gov.sg"
+    href="/opendoc-postman-guide/feed.xml">
+  <!-- Polyfill for corejs functions, promises, array.includes, array.from, etc. -->
+  <script src="/opendoc-postman-guide/assets/vendor/babel-polyfill.min.js"></script>
+  <!-- Polyfill for dom functions -->
+  <script src="/opendoc-postman-guide/assets/vendor/dom4.js" charset="utf-8"></script>
+  <!-- Polyfill for fetch API -->
+  <script src="/opendoc-postman-guide/assets/vendor/fetch.umd.js"></script>
+  <!-- Priority Queue library for promises -->
+  <script src="/opendoc-postman-guide/assets/js/pqueue.js"></script>
+  <!-- Helper functions that should be preloaded go here -->
+  <script src="/opendoc-postman-guide/assets/js/helpers.js"></script><script src="/opendoc-postman-guide/assets/js/google_analytics.js"></script></head>
+
+<body>
+  <div class="site-header no-print">
+    <div class="site-header-left">
+      <a href="/opendoc-postman-guide/">
+        <h1 class="site-header-text">
+          Postman.gov.sg
+        </h1>
+      </a>
+      <span class="site-last-updated">
+        LAST UPDATED: 22 JUNE 2020
+      <span>
+    </div>
+    <div class="site-header-right"><a id="contact-us" href="https://go.gov.sg/postman-contact-us" target="_blank">
+        <span>Contact Us</span>
+      </a>
+      <a href="" class="desktop">
+        <img class="agency-logo" src="/opendoc-postman-guide/assets/logo.svg">
+      </a>
+      <a href="/opendoc-postman-guide/" class="mobile">
+        <img class="agency-logo" src="/opendoc-postman-guide/assets/logo.svg">
+      </a>
+      <a class="search-btn top-mobile-btn">
+        <img src="/opendoc-postman-guide/assets/images/search-icon-dark.svg">
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav no-print">
+    <div class="nav-header no-print">
+      <div class="search-box">
+        <div class="search-icon-container search-btn">
+          <img class="search-icon mobile" src="/opendoc-postman-guide/assets/images/search-icon-dark.svg"/>
+          <img class="search-icon" src="/opendoc-postman-guide/assets/images/search-icon-white.svg"/>
+          <img class="close-icon" src="/opendoc-postman-guide/assets/images/close.svg"/>
+        </div>
+        <span class="search-filter hidden">A guide to all things Postman.gov.sg</span>
+        <div class="search-input-container">
+          <p class="search-header">search entire site</p>
+          <input id="search-box" placeholder="Search titles or keywords" type="text" />
+        </div>
+        <label class="clear-button">
+          <svg class="clear-icon" viewBox="0 0 18 18" width="18" height="18">
+            <path d="M2.42755 1L17.0331 15.60554l-1.41423 1.4142L1 2.38402"></path>
+            <path d="M1 15.51932L15.51933 1l1.4142 1.4142L2.2978 17.0331"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="search-results">
+      </div>
+    </div>
+    <div class="nav-main no-print">
+
+    
+
+
+<section class="navigation">
+
+
+
+
+    
+    
+    
+    <section class="contents lonely" id="toc_/">
+    
+    
+
+
+            
+
+    
+        
+            
+
+            
+
+            
+
+    
+        
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+    
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+
+
+
+<ul class="table-of-contents">  <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html" class="nav-link"><span class="directory-item"> Section 1: Before You Start </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#create-a-common-email" class="nav-link"><span class="directory-item"> Create a common email </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#can-i-have-multiple-users-from-the-same-agency-sharing-the-same-account" class="nav-link"><span class="directory-item"> Can I have multiple users from the same agency sharing the same account? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#save-your-credentials" class="nav-link"><span class="directory-item"> Save your credentials </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#remove-your-credentials" class="nav-link"><span class="directory-item"> Remove your credentials </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#request-a-set-of-trial-credentials-for-sms-sending" class="nav-link"><span class="directory-item"> Request a set of trial credentials for SMS sending. </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#generate-an-api-key" class="nav-link"><span class="directory-item"> Generate an API key </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/before-you-start.html#swagger" class="nav-link"><span class="directory-item"> Swagger </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html" class="nav-link"><span class="directory-item"> Section 1a: Twilio &amp; SMS </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#what-is-twilio" class="nav-link"><span class="directory-item"> What is Twilio? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#how-is-postman-different-from-twilio" class="nav-link"><span class="directory-item"> How is Postman different from Twilio? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#why-did-postman-choose-twilio" class="nav-link"><span class="directory-item"> Why did Postman choose Twilio? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#how-can-i-sign-up-for-a-twilio-account" class="nav-link"><span class="directory-item"> How can I sign-up for a Twilio account? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#where-can-i-find-credentials-on-the-twilio-console" class="nav-link"><span class="directory-item"> Where can I find credentials on the Twilio console? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#1-account-sid--auth-token" class="nav-link"><span class="directory-item"> 1. Account SID &amp; Auth Token </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#2-set-up-a-standard-api-key" class="nav-link"><span class="directory-item"> 2. Set up a Standard API Key </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#3-set-up-messaging-service" class="nav-link"><span class="directory-item"> 3. Set up Messaging Service </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#4-buy-a-number" class="nav-link"><span class="directory-item"> 4. Buy a number </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/twilio-sms.html#5-alphanumeric-sender-id" class="nav-link"><span class="directory-item"> 5. Alphanumeric Sender ID </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/email.html" class="nav-link"><span class="directory-item"> Section 1b. Email </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/email.html#no-set-up-is-required" class="nav-link"><span class="directory-item"> No set up is required </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/email.html#what-email-address-will-be-in-the-from-field-if-i-were-to-send-my-messages-out-via-postman" class="nav-link"><span class="directory-item"> What email address will be in the from field if I were to send my messages out via Postman? </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/email.html#how-can-i-format-my-email" class="nav-link"><span class="directory-item"> How can I format my email? </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/telegram.html" class="nav-link"><span class="directory-item"> Section 1c. Telegram </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/telegram.html#telegram-bot" class="nav-link"><span class="directory-item"> Telegram Bot </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/telegram.html#1-set-up-a-bot" class="nav-link"><span class="directory-item"> 1. Set up a bot </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/telegram.html#2-message-botfather-on-telegram-to-set-up-a-bot" class="nav-link"><span class="directory-item"> 2. Message BotFather on Telegram to set up a bot </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/telegram.html#3-send-us-your-telegram-bot-token" class="nav-link"><span class="directory-item"> 3. Send us your Telegram bot token </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/step-by-step-guide.html" class="nav-link"><span class="directory-item"> Section 2: Step by Step Guide </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/step-by-step-guide.html#step-1-create-a-message-template" class="nav-link"><span class="directory-item"> Step 1: Create a Message Template </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/step-by-step-guide.html#step-2-set-up-a-csv-contact-list" class="nav-link"><span class="directory-item"> Step 2: Set up a CSV contact list </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/step-by-step-guide.html#example-sms-flow" class="nav-link"><span class="directory-item"> Example: SMS flow </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/step-by-step-guide.html#example-email-flow" class="nav-link"><span class="directory-item"> Example: Email flow </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/poweruser.html" class="nav-link"><span class="directory-item"> Section 3: Power User </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/poweruser.html#send-rate" class="nav-link"><span class="directory-item"> Send rate </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/poweruser.html#email-formatting" class="nav-link"><span class="directory-item"> Email formatting </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html" class="nav-link"><span class="directory-item"> Section 4: FAQs </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html#access" class="nav-link"><span class="directory-item"> Access </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html#browser-compatibility" class="nav-link"><span class="directory-item"> Browser Compatibility </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html#credentials" class="nav-link"><span class="directory-item"> Credentials </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html#features" class="nav-link"><span class="directory-item"> Features </span></a></li>      <li class="nav-branch"><a href="/opendoc-postman-guide/faq.html#billing" class="nav-link"><span class="directory-item"> Billing </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/report-bug.html" class="nav-link"><span class="directory-item"> Report Bugs </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/report-bug.html#found-a-bug" class="nav-link"><span class="directory-item"> Found a Bug? </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/privacy.html" class="nav-link"><span class="directory-item"> Privacy Policy </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-postman-guide/privacy.html#annex" class="nav-link"><span class="directory-item"> Annex </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-postman-guide/t-c.html" class="nav-link"><span class="directory-item"> Terms of Use </span></a></li></ul>
+    </section>
+
+</section></div>
+  </nav><div id="index-div">
+  <header class="doc-header no-print">
+    <div class=description-container>
+      <h2 id="document-title">
+        A guide to all things Postman.gov.sg
+      </h2>
+      <div>
+        <div id="document-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar-container no-print">
+    <label for="menu-toggle" class="toolbar-button" id="menu-toggle-btn">
+            <input type="checkbox" id="menu-toggle" hidden>
+            <img class="btn-icon" src="/opendoc-postman-guide/assets/images/sidebar.svg">
+            <img class="btn-icon hover" src="/opendoc-postman-guide/assets/images/sidebar-hover.svg">
+            <img class="mobile-btn-icon " src="/opendoc-postman-guide/assets/images/menu.svg">
+            <img class="mobile-btn-icon close" src="/opendoc-postman-guide/assets/images/x-mobile.svg">
+            <div class="tooltip">Toggle Sidebar</div>
+        </label></div>
+
+<div class="fab no-print" id="fab">
+    <div class="overlay" id="fab-overlay"></div>
+    <div class="back-to-top hidden" id="back-to-top" href="#">
+        <img class="btn-icon" src="/opendoc-postman-guide/assets/images/chevron-up-white.svg">
+    </div>
+    <div class="trigger" id="fab-trigger">
+        <img class="btn-icon" src="/opendoc-postman-guide/assets/images/vertical-dots.svg">
+        <img class="btn-icon close" src="/opendoc-postman-guide/assets/images/x-mobile.svg">
+    </div>
+    <div class="actions"><a class="action feedback-btn" href="https://go.gov.sg/postman-contact-us" target="_blank">
+            <img class="btn-icon" src="/opendoc-postman-guide/assets/images/feedback.svg">
+            <div class="tooltip">Feedback</div>
+        </a>
+        <div class="action share-btn">
+            <img class="btn-icon" src="/opendoc-postman-guide/assets/images/share.svg">
+            <div class="tooltip">Share</div>
+        </div>
+        </div>
+</div>
+  </div>
+
+  <main class="site-main" id="main-content" aria-label="Content"><h1 id="section-1a-twilio--sms">Section 1a: Twilio &amp; SMS</h1>
+
+<h2 id="what-is-twilio">What is Twilio?</h2>
+<p><a href="https://www.twilio.com/" title="Twilio's Homepage">Twilio</a> is a cloud communication service that allows the users to send messages through an Application Program Interface (API).</p>
+
+<h2 id="how-is-postman-different-from-twilio">How is Postman different from Twilio?</h2>
+<ol>
+  <li><strong>UI</strong>
+    <ul>
+      <li>Postman provides a user friendly interface for users to easily access what Twilio has to offer.</li>
+    </ul>
+  </li>
+  <li><strong>API</strong>
+    <ul>
+      <li>Optimises the <strong>rate limit</strong> to send messages in bulk</li>
+      <li>Allows the user to <strong>cancel</strong> the campaign</li>
+      <li>Allows the user to <strong>retry</strong> for messages that encounter errors during the first attempted delivery</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="why-did-postman-choose-twilio">Why did Postman choose Twilio?</h2>
+<p>We evaluated other cloud service providers before we chose Twilio. We have used Twilio for SMS sending service for NDP ticketing, Digital MC, SGH’s elective surgery appointment receipt and reminder, MOH’s quarantine notice, and ICA’s location checking for those who are on quarantine notice.</p>
+
+<p><strong>Easy to setup &amp; well documented API</strong></p>
+
+<p>Twilio, Nextmo and AWS SNS are all cloud base SMS solutions. Twilio’s primary benefit is that there is a simple user interface with an interactive debugger. Our developers have experiences integrating with Twilio. Twilio is known for its simple, and well documented API. Given that it is easy for us to integrate with Twilio and save significant manpower hours on setting up our own SMS gateway, Twilio was chosen as the service provider.</p>
+
+<p><strong>Reliability &amp; availability</strong></p>
+
+<p>Twilio API success rate is 99.999% &amp; uptime is ~ 99.95% (per month).
+Nexmo does not publicly declare its API success rate and uptime.
+AWS does not publicly declare its API success rate but uptime is ~99.90% (per month).</p>
+
+<h2 id="how-can-i-sign-up-for-a-twilio-account">How can I sign-up for a Twilio account?</h2>
+<p>You can go to <a href="https://www.twilio.com/" title="Twilio's Homepage">Twilio.com</a> to sign up for an account. Twilio provides simple and flexible <a href="https://www.twilio.com/pricing" title="Twilio's Pricing">pricing plans</a> for different tiers of users.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Payment Schemes</th>
+      <th style="text-align: left">What do you need?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Pay-as-you-go</td>
+      <td style="text-align: left">Corporate credit card</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Volume discount</td>
+      <td style="text-align: left">Procure by contacting Twilio sales</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Committed-use discounts</td>
+      <td style="text-align: left">Procure by contacting Twilio sales</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="where-can-i-find-credentials-on-the-twilio-console">Where can I find credentials on the Twilio console?</h2>
+
+<h2 id="1-account-sid--auth-token">1. Account SID &amp; Auth Token</h2>
+<p>Your credentials should be on the dashboard when you login to Twilio’s console.</p>
+
+<p><img src="/opendoc-postman-guide/assets/projectlevel-sid.jpg" alt="project sid" /></p>
+
+<p>An alternative way to access your credential is through <strong>Project &gt; Project Settings &gt; API Credentials</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/twilio_cred.png" alt="twilio credentials" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/tip-twilio-account.png" alt="twilio account setup tip" />
+This is particularly useful for a large agency with many users. Your agency might ask you to create a subproject in Twilio to track your usage. An example would be <strong>MOE</strong> at the <strong>project level</strong> and <strong>Course: ecology 101</strong> at the <strong>subproject level</strong> for ecology 101’s teacher to send SMS to parents.</p>
+
+<p><img src="/opendoc-postman-guide/assets/project-subproject-ex.png" alt="project subproject" /></p>
+
+<p>If you fall under a subproject, you need to navigate to <strong>Project &gt; Project Settings &gt; Subproject &gt; “Subproject name like Course: ecology 101” &gt; Settings &gt; General</strong> to obtain your subproject SID. Twilio console will indicate that you are viewing settings under a subproject using an orange font on the navigation bar.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subproj-sid.jpg" alt="subproject sid" /></p>
+
+<h2 id="2-set-up-a-standard-api-key">2. Set up a Standard API Key</h2>
+
+<p>Click on <strong>Create new API Key</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-create-new.jpg" alt="api create new" /></p>
+
+<p>Create a new <strong>standard</strong> API key. You can rename the friendly name.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-create-standard.jpg" alt="api create standard" /></p>
+
+<p>We need your <strong>SID</strong> and <strong>secret</strong> for Postman. Please keep these safe. Remember to save the <strong>secret</strong> somewhere before you click on <strong>Done</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/api-creation-success.jpg" alt="api creation success" /></p>
+
+<h2 id="3-set-up-messaging-service">3. Set up Messaging Service</h2>
+
+<p>Click on <strong>Create new Messaging Service</strong>.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-serv-creation.jpg" alt="create messaging service" /></p>
+
+<p>Create a <strong>new messaging service</strong>. You can rename the friendly name.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-creation.jpg" alt="create messaging service modal" /></p>
+
+<p>Select drop the message &amp; press save.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-msg-serv-setup.jpg" alt="create messaging service setting" /></p>
+
+<p>Go back to <strong>SMS &gt; Messaging Service</strong>. You will see the newly created messaging service. You can click on it to buy a phone number.</p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-messaging-serv.jpg" alt="create messaging service overview " /></p>
+
+<p><img src="/opendoc-postman-guide/assets/tip-twilio-upgrade-acct.png" alt="upgrade" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/subaccount-upgrade-proj.jpg" alt="upgrade" /></p>
+
+<h2 id="4-buy-a-number">4. Buy a number</h2>
+
+<p>You need to purchase a phone number to start using Postman.</p>
+
+<p>You can use a US number and mask the number with an <a href="https://support.twilio.com/hc/en-us/articles/223181348-Getting-Started-with-Alphanumeric-Sender-ID-for-Twilio-Programmable-SMS/" title="Twilio alphanumeric sender ID">alphanumeric sender ID</a>. Singapore number is only needed for 2-way SMS. Postman will support 1-way SMS at the start.</p>
+
+<p><img src="/opendoc-postman-guide/assets/phonenum.jpg" alt="phone number" /></p>
+
+<p>If you wish to purchase a Singapore phone number that starts with +65, you need to complete a regulatory bundle. It will ask for an ID and business details for verification.</p>
+
+<p><img src="/opendoc-postman-guide/assets/reg-bundle.jpg" alt="complete regulatory bundle" /></p>
+
+<p>Once your application for regulatory bundle has been approved then you can search for a phone number that starts with +65.</p>
+
+<p><img src="/opendoc-postman-guide/assets/buy-num-1.jpg" alt="search phone number" /></p>
+
+<p>Singapore phone number is $75 per month. We recommend that you buy a US phone number which is $1 per month if you are not doing 2-way messaging. SMS cost depends on the country code of the phone number. Please take note that a US phone number might cost more to send SMS.</p>
+
+<p><img src="/opendoc-postman-guide/assets/buy-num-2.jpg" alt="buy phone number" /></p>
+
+<p><img src="/opendoc-postman-guide/assets/alert-release-number.png" alt="do not release number" /></p>
+
+<p>Once you have bought a number, you can go back to <strong>Messaging Service</strong> to complete the set up by linking a phone number to your messaging service.</p>
+
+<h2 id="5-alphanumeric-sender-id">5. Alphanumeric Sender ID</h2>
+
+<p>You can go to <strong>Programmable SMS &gt; Messaging Service &gt; Select the name of the Messaging Service &gt; Features &gt; Alpha Sender ID</strong> (see box in red) to enter in your alphanumeric sender ID.</p>
+
+<p><img src="/opendoc-postman-guide/assets/alphasenderid.jpg" alt="alpha sender id" /></p>
+
+
+
+  </main>
+  <div class="site-branding no-print">
+    Powered by <a href="https://opendoc.sg"><img src="/opendoc-postman-guide/assets/images/opendoc-logo-full.svg"></a>
+  </div>
+
+  <script src="/opendoc-postman-guide/assets/vendor/jump.min.js" charset="utf-8"></script>
+  <script src="/opendoc-postman-guide/assets/vendor/headroom.min.js" charset="utf-8"></script>
+  <script src="/opendoc-postman-guide/assets/vendor/mark.min.js" charset="utf-8"></script>
+  <script src="/opendoc-postman-guide/assets/vendor/web-share-shim.bundle.min.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/toolbar.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/page-index.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/pre-loader.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/lunr.min.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/search.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/header.js"></script>
+  <script src="/opendoc-postman-guide/assets/js/navigation.js"></script>
+</body>
+
+</html>
