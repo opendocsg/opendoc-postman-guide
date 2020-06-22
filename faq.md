@@ -1,5 +1,9 @@
 # Section 4: FAQs
 
+## Browser Compatibility
+
+We only support Chrome, Firefox, and Samsung Internet at the moment. We have had issues with Postman on Internet Explorer 11 and we are actively fixing this issue. 
+
 ## Credentials
 ### Can I see what Postman has before entering a credential?
 
